@@ -1,0 +1,63 @@
+.container {
+  max-width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  font-family: 'Poppins', sans-serif;
+  color: #302f2f;
+  border-radius: 48px;
+  background: #eeebeb;
+}
+
+.titulo-principal {
+  color: #f17a0a;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.subtitulo {
+  font-size: 20px;
+  margin: 30px 0 20px 0;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.campo input, .campo select {
+  padding: 15px;
+  border: 1px solid #88898a ;
+  border-radius: 24px;
+  font-size: 16px;
+}
+
+.linha-dupla {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-enviar {
+  background-color: #EB9B00;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-enviar:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

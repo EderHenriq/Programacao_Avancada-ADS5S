@@ -1,0 +1,40 @@
+<div class="container">
+  <h1 class="titulo-principal">Cadastre-se no MyShowCase</h1>
+
+  <form [formGroup]="formulario" (ngSubmit)="salvar()">
+
+    <section>
+      <h2 class="subtitulo">Preencha seus dados pessoais</h2>
+
+      <div class="campo">
+        <label>Digite seu nome completo</label>
+        <input formControlName="nome" type="text">
+      </div>
+
+      <div class="linha-dupla">
+        <div class="campo">
+          <label>Informe sua data de nascimento</label>
+          <input formControlName="nascimento" type="date">
+        </div>
+        <div class="campo">
+          <label>Número de Contato</label>
+          <input formControlName="contato" type="text" placeholder="(XX) XXXXX-XXXX">
+        </div>
+      </div>
+
+      <div class="campo">
+        <label>Informe seu E-mail</label>
+        <input formControlName="email" type="email">
+      </div>
+
+      <div class="campo">
+        <label>Informe sua senha</label>
+        <input formControlName="senha" type="password">
+      </div>
+    </section>
+
+    <button type="submit" class="btn-enviar" [disabled]="formulario.invalid">
+      Enviar formulário
+    </button>
+  </form>
+</div>
